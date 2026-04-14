@@ -2,7 +2,7 @@ import socket
 
  
 
-msgFromClient       = "Hello UDP Server"
+msgFromClient       = "Hello UDP Server "
 
 bytesToSend         = str.encode(msgFromClient)
 
