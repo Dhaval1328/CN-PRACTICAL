@@ -8,7 +8,7 @@ server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 server_socket.bind((HOST, PORT))
 # Listen for incoming connections (max backlog of 5)
 server_socket.listen(5)
-print('Server listening on {}:{}'.format(HOST, PORT))
+print('Server listening on {}:{}'.format(HOST, PORT ))
 # Wait for a connection
 client_socket, client_address = server_socket.accept()
 print('Accepted connection from {}:{}'.format(client_address[0],
