@@ -11,7 +11,7 @@ server_socket.listen(5)
 print('Server listening on {}:{}'.format(HOST, PORT ))
 # Wait for a connection
 client_socket, client_address = server_socket.accept()
-print('Accepted connection from {}:{}'.format(client_address[0],
+print('Accepted connection from {}:{}'.format(client_address[0 ],
                                               client_address[1]))
 # Receive and send messages from/to the client
 while True:
