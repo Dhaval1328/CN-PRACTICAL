@@ -3,7 +3,7 @@ HOST = ''   # Symbolic name meaning all available interfaces
 PORT = 8080 # Arbitrary non-privileged port
 # Create a TCP/IP socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1 )
 # Bind the socket to a specific address and port
 server_socket.bind((HOST, PORT))
 # Listen for incoming connections (max backlog of 5)
